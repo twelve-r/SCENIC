@@ -1,17 +1,375 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>SCENIC</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
+
+
 <body>
 
-    <h1>SCENIC</h1>
+    <!-- ================= HEADER ================= -->
 
-    <p>Explore the beauty of the world</p>
+    <header class="header">
 
-    <button>Explore</button>
-    
+        <a href="#" class="logo">
+            SCENIC
+        </a>
+
+        <nav class="nav">
+
+            <a href="#gallery">
+                Explore
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="hero-subtitle">
+                    EXPLORE THE WORLD
+                </p>
+
+                <h1>
+                    Discover the beauty of the world.
+                </h1>
+
+                <p class="hero-description">
+                    A collection of landscapes, places and moments.
+                </p>
+
+                <a href="#gallery" class="hero-button">
+                    Explore
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CATEGORIES ================= -->
+
+        <section class="categories" id="categories">
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    DISCOVER
+                </p>
+
+                <h2>
+                    Explore Landscapes
+                </h2>
+
+                <p>
+                    Discover beautiful places from around the world.
+                </p>
+
+            </div>
+
+
+            <div class="category-list">
+
+                <button class="category-button active" data-filter="all">
+                    All
+                </button>
+
+                <button class="category-button" data-filter="mountains">
+                    Mountains
+                </button>
+
+                <button class="category-button" data-filter="oceans">
+                    Oceans
+                </button>
+
+                <button class="category-button" data-filter="forests">
+                    Forests
+                </button>
+
+                <button class="category-button" data-filter="deserts">
+                    Deserts
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= GALLERY ================= -->
+
+        <section class="gallery-section" id="gallery">
+
+            <div class="gallery">
+
+                <!-- Mountain -->
+
+                <article class="card" data-category="mountains">
+
+                    <img
+                        src="images/mountain-01.jpg"
+                        alt="Mountain landscape"
+                    >
+
+                    <div class="card-info">
+
+                        <p>
+                            MOUNTAINS
+                        </p>
+
+                        <h3>
+                            Into the Wild
+                        </h3>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card" data-category="mountains">
+
+                    <img
+                        src="images/mountain-02.jpg"
+                        alt="Mountain landscape"
+                    >
+
+                    <div class="card-info">
+
+                        <p>
+                            MOUNTAINS
+                        </p>
+
+                        <h3>
+                            Silent Peaks
+                        </h3>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Ocean -->
+
+                <article class="card" data-category="oceans">
+
+                    <img
+                        src="images/ocean-01.jpg"
+                        alt="Ocean landscape"
+                    >
+
+                    <div class="card-info">
+
+                        <p>
+                            OCEANS
+                        </p>
+
+                        <h3>
+                            Endless Blue
+                        </h3>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card" data-category="oceans">
+
+                    <img
+                        src="images/ocean-02.jpg"
+                        alt="Ocean landscape"
+                    >
+
+                    <div class="card-info">
+
+                        <p>
+                            OCEANS
+                        </p>
+
+                        <h3>
+                            Beyond the Horizon
+                        </h3>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Forest -->
+
+                <article class="card" data-category="forests">
+
+                    <img
+                        src="images/forest-01.jpg"
+                        alt="Forest landscape"
+                    >
+
+                    <div class="card-info">
+
+                        <p>
+                            FORESTS
+                        </p>
+
+                        <h3>
+                            Into the Green
+                        </h3>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card" data-category="forests">
+
+                    <img
+                        src="images/forest-02.jpg"
+                        alt="Forest landscape"
+                    >
+
+                    <div class="card-info">
+
+                        <p>
+                            FORESTS
+                        </p>
+
+                        <h3>
+                            Quiet Woods
+                        </h3>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Desert -->
+
+                <article class="card" data-category="deserts">
+
+                    <img
+                        src="images/desert-01.jpg"
+                        alt="Desert landscape"
+                    >
+
+                    <div class="card-info">
+
+                        <p>
+                            DESERTS
+                        </p>
+
+                        <h3>
+                            Golden Silence
+                        </h3>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card" data-category="deserts">
+
+                    <img
+                        src="images/desert-02.jpg"
+                        alt="Desert landscape"
+                    >
+
+                    <div class="card-info">
+
+                        <p>
+                            DESERTS
+                        </p>
+
+                        <h3>
+                            Endless Sand
+                        </h3>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section class="about" id="about">
+
+            <div class="about-content">
+
+                <p class="section-label">
+                    ABOUT SCENIC
+                </p>
+
+                <h2>
+                    There is beauty everywhere.
+                </h2>
+
+                <p>
+                    SCENIC is a personal collection of landscapes
+                    and moments from around the world.
+                    This website is created to explore,
+                    appreciate and remember beautiful places.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <p>
+            © 2026 SCENIC
+        </p>
+
+        <p>
+            A personal landscape collection.
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="js/script.js"></script>
+
 </body>
+
 </html>
+                
+
+        
+    
+
+
+
+
+
+
+
+
+
