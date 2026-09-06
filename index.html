@@ -5,24 +5,34 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>SCENIC</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
 
 </head>
 
 
 <body>
 
-    <!-- ================= HEADER ================= -->
+
+    <!-- =========================
+         HEADER
+    ========================== -->
 
     <header class="header">
 
         <a href="#" class="logo">
             SCENIC
         </a>
+
 
         <nav class="nav">
 
@@ -39,9 +49,17 @@
     </header>
 
 
-    <!-- ================= HERO ================= -->
+
+    <!-- =========================
+         MAIN
+    ========================== -->
 
     <main>
+
+
+        <!-- =========================
+             HERO
+        ========================== -->
 
         <section class="hero">
 
@@ -51,26 +69,51 @@
                     EXPLORE THE WORLD
                 </p>
 
+
                 <h1>
                     Discover the beauty of the world.
                 </h1>
+
 
                 <p class="hero-description">
                     A collection of landscapes, places and moments.
                 </p>
 
-                <a href="#gallery" class="hero-button">
+
+                <a
+                    href="#gallery"
+                    class="hero-button"
+                >
                     Explore
                 </a>
+
+            </div>
+
+
+            <!-- Scroll Indicator -->
+
+            <div class="scroll-indicator">
+
+                <span>
+                    SCROLL
+                </span>
+
+                <div class="scroll-line"></div>
 
             </div>
 
         </section>
 
 
-        <!-- ================= CATEGORIES ================= -->
 
-        <section class="categories" id="categories">
+        <!-- =========================
+             CATEGORIES
+        ========================== -->
+
+        <section
+            class="categories"
+            id="categories"
+        >
 
             <div class="section-heading">
 
@@ -78,9 +121,11 @@
                     DISCOVER
                 </p>
 
+
                 <h2>
                     Explore Landscapes
                 </h2>
+
 
                 <p>
                     Discover beautiful places from around the world.
@@ -89,25 +134,46 @@
             </div>
 
 
+            <!-- Category Buttons -->
+
             <div class="category-list">
 
-                <button class="category-button active" data-filter="all">
+                <button
+                    class="category-button active"
+                    data-filter="all"
+                >
                     All
                 </button>
 
-                <button class="category-button" data-filter="mountains">
+
+                <button
+                    class="category-button"
+                    data-filter="mountains"
+                >
                     Mountains
                 </button>
 
-                <button class="category-button" data-filter="oceans">
+
+                <button
+                    class="category-button"
+                    data-filter="oceans"
+                >
                     Oceans
                 </button>
 
-                <button class="category-button" data-filter="forests">
+
+                <button
+                    class="category-button"
+                    data-filter="forests"
+                >
                     Forests
                 </button>
 
-                <button class="category-button" data-filter="deserts">
+
+                <button
+                    class="category-button"
+                    data-filter="deserts"
+                >
                     Deserts
                 </button>
 
@@ -116,20 +182,34 @@
         </section>
 
 
-        <!-- ================= GALLERY ================= -->
 
-        <section class="gallery-section" id="gallery">
+        <!-- =========================
+             GALLERY
+        ========================== -->
+
+        <section
+            class="gallery-section"
+            id="gallery"
+        >
 
             <div class="gallery">
 
-                <!-- Mountain -->
 
-                <article class="card" data-category="mountains">
+                <!-- =================
+                     MOUNTAINS
+                ================== -->
+
+
+                <article
+                    class="card"
+                    data-category="mountains"
+                >
 
                     <img
                         src="images/mountain-01.jpg"
                         alt="Mountain landscape"
                     >
+
 
                     <div class="card-info">
 
@@ -146,12 +226,17 @@
                 </article>
 
 
-                <article class="card" data-category="mountains">
+
+                <article
+                    class="card"
+                    data-category="mountains"
+                >
 
                     <img
                         src="images/mountain-02.jpg"
                         alt="Mountain landscape"
                     >
+
 
                     <div class="card-info">
 
@@ -168,14 +253,76 @@
                 </article>
 
 
-                <!-- Ocean -->
 
-                <article class="card" data-category="oceans">
+                <article
+                    class="card"
+                    data-category="mountains"
+                >
+
+                    <img
+                        src="images/mountain-03.jpg"
+                        alt="Mountain landscape"
+                    >
+
+
+                    <div class="card-info">
+
+                        <p>
+                            MOUNTAINS
+                        </p>
+
+                        <h3>
+                            Mountain Light
+                        </h3>
+
+                    </div>
+
+                </article>
+
+
+
+                <article
+                    class="card"
+                    data-category="mountains"
+                >
+
+                    <img
+                        src="images/mountain-04.jpg"
+                        alt="Mountain landscape"
+                    >
+
+
+                    <div class="card-info">
+
+                        <p>
+                            MOUNTAINS
+                        </p>
+
+                        <h3>
+                            Above the Clouds
+                        </h3>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================
+                     OCEANS
+                ================== -->
+
+
+                <article
+                    class="card"
+                    data-category="oceans"
+                >
 
                     <img
                         src="images/ocean-01.jpg"
                         alt="Ocean landscape"
                     >
+
 
                     <div class="card-info">
 
@@ -192,12 +339,17 @@
                 </article>
 
 
-                <article class="card" data-category="oceans">
+
+                <article
+                    class="card"
+                    data-category="oceans"
+                >
 
                     <img
                         src="images/ocean-02.jpg"
                         alt="Ocean landscape"
                     >
+
 
                     <div class="card-info">
 
@@ -214,14 +366,76 @@
                 </article>
 
 
-                <!-- Forest -->
 
-                <article class="card" data-category="forests">
+                <article
+                    class="card"
+                    data-category="oceans"
+                >
+
+                    <img
+                        src="images/ocean-03.jpg"
+                        alt="Ocean landscape"
+                    >
+
+
+                    <div class="card-info">
+
+                        <p>
+                            OCEANS
+                        </p>
+
+                        <h3>
+                            Blue Horizon
+                        </h3>
+
+                    </div>
+
+                </article>
+
+
+
+                <article
+                    class="card"
+                    data-category="oceans"
+                >
+
+                    <img
+                        src="images/ocean-04.jpg"
+                        alt="Ocean landscape"
+                    >
+
+
+                    <div class="card-info">
+
+                        <p>
+                            OCEANS
+                        </p>
+
+                        <h3>
+                            Into the Tide
+                        </h3>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================
+                     FORESTS
+                ================== -->
+
+
+                <article
+                    class="card"
+                    data-category="forests"
+                >
 
                     <img
                         src="images/forest-01.jpg"
                         alt="Forest landscape"
                     >
+
 
                     <div class="card-info">
 
@@ -238,12 +452,17 @@
                 </article>
 
 
-                <article class="card" data-category="forests">
+
+                <article
+                    class="card"
+                    data-category="forests"
+                >
 
                     <img
                         src="images/forest-02.jpg"
                         alt="Forest landscape"
                     >
+
 
                     <div class="card-info">
 
@@ -260,14 +479,76 @@
                 </article>
 
 
-                <!-- Desert -->
 
-                <article class="card" data-category="deserts">
+                <article
+                    class="card"
+                    data-category="forests"
+                >
+
+                    <img
+                        src="images/forest-03.jpg"
+                        alt="Forest landscape"
+                    >
+
+
+                    <div class="card-info">
+
+                        <p>
+                            FORESTS
+                        </p>
+
+                        <h3>
+                            Deep Green
+                        </h3>
+
+                    </div>
+
+                </article>
+
+
+
+                <article
+                    class="card"
+                    data-category="forests"
+                >
+
+                    <img
+                        src="images/forest-04.jpg"
+                        alt="Forest landscape"
+                    >
+
+
+                    <div class="card-info">
+
+                        <p>
+                            FORESTS
+                        </p>
+
+                        <h3>
+                            Hidden Path
+                        </h3>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================
+                     DESERTS
+                ================== -->
+
+
+                <article
+                    class="card"
+                    data-category="deserts"
+                >
 
                     <img
                         src="images/desert-01.jpg"
                         alt="Desert landscape"
                     >
+
 
                     <div class="card-info">
 
@@ -284,12 +565,17 @@
                 </article>
 
 
-                <article class="card" data-category="deserts">
+
+                <article
+                    class="card"
+                    data-category="deserts"
+                >
 
                     <img
                         src="images/desert-02.jpg"
                         alt="Desert landscape"
                     >
+
 
                     <div class="card-info">
 
@@ -305,14 +591,75 @@
 
                 </article>
 
+
+
+                <article
+                    class="card"
+                    data-category="deserts"
+                >
+
+                    <img
+                        src="images/desert-03.jpg"
+                        alt="Desert landscape"
+                    >
+
+
+                    <div class="card-info">
+
+                        <p>
+                            DESERTS
+                        </p>
+
+                        <h3>
+                            Desert Light
+                        </h3>
+
+                    </div>
+
+                </article>
+
+
+
+                <article
+                    class="card"
+                    data-category="deserts"
+                >
+
+                    <img
+                        src="images/desert-04.jpg"
+                        alt="Desert landscape"
+                    >
+
+
+                    <div class="card-info">
+
+                        <p>
+                            DESERTS
+                        </p>
+
+                        <h3>
+                            Endless Horizon
+                        </h3>
+
+                    </div>
+
+                </article>
+
+
             </div>
 
         </section>
 
 
-        <!-- ================= ABOUT ================= -->
 
-        <section class="about" id="about">
+        <!-- =========================
+             ABOUT
+        ========================== -->
+
+        <section
+            class="about"
+            id="about"
+        >
 
             <div class="about-content">
 
@@ -320,9 +667,11 @@
                     ABOUT SCENIC
                 </p>
 
+
                 <h2>
                     There is beauty everywhere.
                 </h2>
+
 
                 <p>
                     SCENIC is a personal collection of landscapes
@@ -335,16 +684,21 @@
 
         </section>
 
+
     </main>
 
 
-    <!-- ================= FOOTER ================= -->
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
 
     <footer class="footer">
 
         <p>
             © 2026 SCENIC
         </p>
+
 
         <p>
             A personal landscape collection.
@@ -353,23 +707,51 @@
     </footer>
 
 
-    <!-- JavaScript -->
+
+    <!-- =========================
+         IMAGE MODAL
+    ========================== -->
+
+    <div class="modal">
+
+        <div class="modal-box">
+
+            <button
+                class="modal-close"
+                aria-label="Close"
+            >
+                ×
+            </button>
+
+
+            <img
+                class="modal-content"
+                src=""
+                alt=""
+            >
+
+
+            <div class="modal-info">
+
+                <p class="modal-category"></p>
+
+                <h2 class="modal-title"></h2>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
 
     <script src="js/script.js"></script>
+
 
 </body>
 
 </html>
-                
-
-        
-    
-
-
-
-
-
-
-
-
-

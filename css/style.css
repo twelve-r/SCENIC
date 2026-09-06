@@ -21,7 +21,10 @@ body {
     background: #111;
     color: #fff;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
 
     line-height: 1.6;
 }
@@ -51,11 +54,13 @@ button {
     padding: 30px 60px;
 
     display: flex;
+
     align-items: center;
     justify-content: space-between;
 
     z-index: 10;
 }
+
 
 .logo {
     font-size: 24px;
@@ -65,11 +70,13 @@ button {
     letter-spacing: 5px;
 }
 
+
 .nav {
     display: flex;
 
     gap: 35px;
 }
+
 
 .nav a {
     font-size: 14px;
@@ -78,8 +85,10 @@ button {
 
     opacity: 0.85;
 
-    transition: opacity 0.3s ease;
+    transition:
+        opacity 0.3s ease;
 }
+
 
 .nav a:hover {
     opacity: 1;
@@ -91,6 +100,9 @@ button {
 ========================= */
 
 .hero {
+
+    position: relative;
+
     min-height: 100vh;
 
     display: flex;
@@ -103,10 +115,12 @@ button {
     padding: 100px 30px;
 
     background-image:
+
         linear-gradient(
             rgba(0, 0, 0, 0.3),
             rgba(0, 0, 0, 0.65)
         ),
+
         url("../images/mountain-01.jpg");
 
     background-size: cover;
@@ -114,11 +128,19 @@ button {
     background-position: center;
 }
 
+
 .hero-content {
+
     max-width: 900px;
+
+    position: relative;
+
+    z-index: 2;
 }
 
+
 .hero-subtitle {
+
     margin-bottom: 20px;
 
     font-size: 13px;
@@ -126,17 +148,22 @@ button {
     letter-spacing: 5px;
 }
 
+
 .hero h1 {
+
     margin-bottom: 25px;
 
-    font-size: clamp(48px, 7vw, 90px);
+    font-size:
+        clamp(48px, 7vw, 90px);
 
     line-height: 1.05;
 
     font-weight: 500;
 }
 
+
 .hero-description {
+
     margin-bottom: 35px;
 
     font-size: 18px;
@@ -144,7 +171,9 @@ button {
     color: #ddd;
 }
 
+
 .hero-button {
+
     display: inline-block;
 
     padding: 14px 32px;
@@ -160,10 +189,86 @@ button {
         color 0.3s ease;
 }
 
+
 .hero-button:hover {
+
     background: #fff;
 
     color: #111;
+}
+
+
+/* =========================
+   SCROLL INDICATOR
+========================= */
+
+.scroll-indicator {
+
+    position: absolute;
+
+    bottom: 40px;
+
+    left: 50%;
+
+    transform:
+        translateX(-50%);
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 15px;
+
+    color: #aaa;
+
+    font-size: 11px;
+
+    letter-spacing: 4px;
+
+    z-index: 2;
+}
+
+
+.scroll-line {
+
+    width: 1px;
+
+    height: 50px;
+
+    background: #aaa;
+
+    animation:
+        scrollMove 2s infinite;
+}
+
+
+@keyframes scrollMove {
+
+    0% {
+
+        opacity: 0;
+
+        transform:
+            translateY(-15px);
+    }
+
+
+    50% {
+
+        opacity: 1;
+    }
+
+
+    100% {
+
+        opacity: 0;
+
+        transform:
+            translateY(15px);
+    }
+
 }
 
 
@@ -172,18 +277,28 @@ button {
 ========================= */
 
 .categories {
-    padding: 120px 60px 60px;
+
+    padding:
+        120px
+        60px
+        60px;
 
     text-align: center;
 }
 
+
 .section-heading {
+
     max-width: 700px;
 
-    margin: 0 auto 50px;
+    margin:
+        0 auto
+        50px;
 }
 
+
 .section-label {
+
     margin-bottom: 12px;
 
     font-size: 12px;
@@ -193,7 +308,9 @@ button {
     color: #999;
 }
 
+
 .section-heading h2 {
+
     margin-bottom: 15px;
 
     font-size: 42px;
@@ -201,7 +318,9 @@ button {
     font-weight: 500;
 }
 
+
 .section-heading > p:last-child {
+
     color: #999;
 
     font-size: 16px;
@@ -213,6 +332,7 @@ button {
 ========================= */
 
 .category-list {
+
     display: flex;
 
     justify-content: center;
@@ -222,8 +342,12 @@ button {
     gap: 12px;
 }
 
+
 .category-button {
-    padding: 10px 20px;
+
+    padding:
+        10px
+        20px;
 
     border: 1px solid #444;
 
@@ -239,13 +363,17 @@ button {
         border-color 0.3s ease;
 }
 
+
 .category-button:hover {
+
     border-color: #fff;
 
     color: #fff;
 }
 
+
 .category-button.active {
+
     background: #fff;
 
     border-color: #fff;
@@ -259,17 +387,24 @@ button {
 ========================= */
 
 .gallery-section {
-    padding: 20px 60px 120px;
+
+    padding:
+        20px
+        60px
+        120px;
 }
 
+
 .gallery {
+
     max-width: 1400px;
 
     margin: 0 auto;
 
     display: grid;
 
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns:
+        repeat(2, 1fr);
 
     gap: 25px;
 }
@@ -280,6 +415,7 @@ button {
 ========================= */
 
 .card {
+
     position: relative;
 
     overflow: hidden;
@@ -287,9 +423,33 @@ button {
     cursor: pointer;
 
     background: #222;
+
+    opacity: 0;
+
+    transform:
+        translateY(50px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
 }
 
+
+.card.visible {
+
+    opacity: 1;
+
+    transform:
+        translateY(0);
+}
+
+
+/* =========================
+   CARD IMAGE
+========================= */
+
 .card img {
+
     display: block;
 
     width: 100%;
@@ -298,14 +458,69 @@ button {
 
     object-fit: cover;
 
-    transition: transform 0.6s ease;
+    transition:
+        transform 0.6s ease,
+        filter 0.6s ease;
 }
+
+
+/* 图片 Hover */
 
 .card:hover img {
-    transform: scale(1.05);
+
+    transform:
+        scale(1.05);
+
+    filter:
+        brightness(0.7);
 }
 
+
+/* =========================
+   CARD OVERLAY
+========================= */
+
+.card::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+
+    height: 45%;
+
+    pointer-events: none;
+
+    background:
+
+        linear-gradient(
+            transparent,
+            rgba(0, 0, 0, 0.75)
+        );
+
+    opacity: 0;
+
+    transition:
+        opacity 0.5s ease;
+}
+
+
+.card:hover::after {
+
+    opacity: 1;
+}
+
+
+/* =========================
+   CARD INFO
+========================= */
+
 .card-info {
+
     position: absolute;
 
     left: 0;
@@ -315,14 +530,30 @@ button {
 
     padding: 30px;
 
-    background:
-        linear-gradient(
-            transparent,
-            rgba(0, 0, 0, 0.8)
-        );
+    z-index: 2;
+
+    transform:
+        translateY(15px);
+
+    opacity: 0;
+
+    transition:
+        transform 0.5s ease,
+        opacity 0.5s ease;
 }
 
+
+.card:hover .card-info {
+
+    transform:
+        translateY(0);
+
+    opacity: 1;
+}
+
+
 .card-info p {
+
     margin-bottom: 5px;
 
     font-size: 11px;
@@ -332,10 +563,53 @@ button {
     color: #ccc;
 }
 
+
 .card-info h3 {
+
     font-size: 26px;
 
     font-weight: 400;
+}
+
+
+/* =========================
+   FILTER ANIMATION
+========================= */
+
+.card.hide {
+
+    display: none;
+}
+
+
+.card.show {
+
+    display: block;
+
+    animation:
+        cardAppear 0.5s ease;
+}
+
+
+@keyframes cardAppear {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(20px);
+    }
+
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+
 }
 
 
@@ -344,20 +618,28 @@ button {
 ========================= */
 
 .about {
-    padding: 150px 30px;
+
+    padding:
+        150px
+        30px;
 
     text-align: center;
 
-    border-top: 1px solid #222;
+    border-top:
+        1px solid #222;
 }
 
+
 .about-content {
+
     max-width: 750px;
 
     margin: 0 auto;
 }
 
+
 .about h2 {
+
     margin-bottom: 25px;
 
     font-size: 48px;
@@ -365,7 +647,9 @@ button {
     font-weight: 400;
 }
 
+
 .about p:last-child {
+
     color: #aaa;
 
     font-size: 17px;
@@ -379,17 +663,245 @@ button {
 ========================= */
 
 .footer {
-    padding: 40px 60px;
+
+    padding:
+        40px
+        60px;
 
     display: flex;
 
     justify-content: space-between;
 
-    border-top: 1px solid #222;
+    border-top:
+        1px solid #222;
 
     color: #777;
 
     font-size: 13px;
+}
+
+
+/* =========================
+   MODAL
+========================= */
+
+.modal {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: none;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 40px;
+
+    background:
+        rgba(0, 0, 0, 0.92);
+
+    z-index: 100;
+}
+
+
+/* Modal 显示 */
+
+.modal.show {
+
+    display: flex;
+
+    animation:
+        fadeIn 0.4s ease;
+}
+
+
+/* =========================
+   MODAL BOX
+========================= */
+
+.modal-box {
+
+    position: relative;
+
+    max-width: 1200px;
+
+    max-height: 90vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+/* =========================
+   MODAL IMAGE
+========================= */
+
+.modal-content {
+
+    display: block;
+
+    max-width: 90vw;
+
+    max-height: 75vh;
+
+    object-fit: contain;
+
+    animation:
+        zoomIn 0.4s ease;
+}
+
+
+/* =========================
+   MODAL INFO
+========================= */
+
+.modal-info {
+
+    width: 100%;
+
+    padding-top: 25px;
+
+    text-align: center;
+
+    animation:
+        modalInfoIn 0.6s ease 0.15s both;
+}
+
+
+.modal-category {
+
+    margin-bottom: 6px;
+
+    font-size: 11px;
+
+    letter-spacing: 4px;
+
+    color: #aaa;
+}
+
+
+.modal-title {
+
+    font-size: 30px;
+
+    font-weight: 400;
+
+    letter-spacing: 1px;
+
+    color: #fff;
+}
+
+
+/* =========================
+   MODAL CLOSE BUTTON
+========================= */
+
+.modal-close {
+
+    position: absolute;
+
+    top: 25px;
+    right: 35px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #fff;
+
+    font-size: 45px;
+
+    font-weight: 200;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    z-index: 101;
+
+    transition:
+        opacity 0.3s ease;
+}
+
+
+.modal-close:hover {
+
+    opacity: 0.6;
+}
+
+
+/* =========================
+   MODAL ANIMATION
+========================= */
+
+@keyframes fadeIn {
+
+    from {
+
+        opacity: 0;
+    }
+
+
+    to {
+
+        opacity: 1;
+    }
+
+}
+
+
+@keyframes zoomIn {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            scale(0.85);
+    }
+
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            scale(1);
+    }
+
+}
+
+
+@keyframes modalInfoIn {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(15px);
+    }
+
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+
 }
 
 
@@ -400,61 +912,165 @@ button {
 @media (max-width: 768px) {
 
     .header {
-        padding: 25px 25px;
+
+        padding:
+            25px;
     }
 
+
     .nav {
+
         gap: 15px;
     }
 
-    .hero {
-        padding: 100px 25px;
+
+    .nav a {
+
+        font-size: 13px;
     }
 
+
+    .hero {
+
+        padding:
+            100px
+            25px;
+    }
+
+
     .hero h1 {
+
         font-size: 48px;
     }
 
-    .categories {
-        padding: 90px 25px 50px;
+
+    .hero-description {
+
+        font-size: 16px;
     }
+
+
+    .categories {
+
+        padding:
+            90px
+            25px
+            50px;
+    }
+
+
+    .section-heading h2 {
+
+        font-size: 36px;
+    }
+
 
     .gallery-section {
-        padding: 20px 25px 90px;
+
+        padding:
+            20px
+            25px
+            90px;
     }
+
 
     .gallery {
-        grid-template-columns: 1fr;
+
+        grid-template-columns:
+            1fr;
     }
 
+
     .card img {
+
         height: 400px;
     }
 
+
     .about {
-        padding: 100px 25px;
+
+        padding:
+            100px
+            25px;
     }
 
+
     .about h2 {
+
         font-size: 38px;
     }
 
+
     .footer {
-        padding: 30px 25px;
+
+        padding:
+            30px
+            25px;
 
         flex-direction: column;
 
         gap: 10px;
     }
+
+
+    /* =====================
+       MOBILE MODAL
+    ===================== */
+
+    .modal {
+
+        padding: 20px;
+    }
+
+
+    .modal-box {
+
+        width: 100%;
+
+        max-height: 90vh;
+    }
+
+
+.modal-content {
+
+    max-width:95vw;
+
+    max-height:70vh;
+
+    object-fit:contain;
+
+    display:block;
+
 }
 
 
+    .modal-info {
+
+        padding-top: 18px;
+    }
 
 
+    .modal-category {
+
+        font-size: 10px;
+
+        letter-spacing: 3px;
+    }
 
 
+    .modal-title {
+
+        font-size: 24px;
+    }
 
 
+    .modal-close {
 
+        top: 15px;
 
+        right: 20px;
 
+        font-size: 38px;
+    }
+
+}
